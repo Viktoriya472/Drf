@@ -1,4 +1,4 @@
-from django.urls import path
+# from django.urls import path
 from posts.views import UserViewSet, PostViewSet
 from rest_framework.routers import SimpleRouter
 

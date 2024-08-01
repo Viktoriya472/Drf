@@ -5,6 +5,7 @@ from posts.permissions import IsAuthorOrReadOnly
 from django.contrib.auth import get_user_model
 from rest_framework.permissions import IsAdminUser
 
+
 class PostViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = Post.objects.all()
